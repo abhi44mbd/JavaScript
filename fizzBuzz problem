@@ -1,0 +1,27 @@
+//intialising empty array 
+var arr=[];
+//setting counter to 1.
+var count= 1;
+//a fun to print numbers and "fizz","buzz","fizzbuzz"
+function fizzBuzz() {
+//if number divisible by both 3 & 5 
+    if(count%3===0 && count%5===0){
+        arr.push("fizzBuzz");
+    }
+    else if(count%5===0)
+    //if number divisible by both 5
+        arr.push("Buzz");
+    
+    else if(count%3===0)
+    
+    //if number divisible by both 3 
+        arr.push("fizz");
+    else
+        arr.push(count);
+        
+    
+    
+    count++;
+    console.log(arr);
+    
+}
